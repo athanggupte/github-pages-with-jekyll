@@ -1,6 +1,8 @@
 ---
 title: "My First Blog Post"
 date: 2020-07-30
+layout: post
+tags: [github learning lab, jekyll, first post]
 ---
 
 I realised that a developer in today's world is practically invisible if he/she/they does not write a blog. So I figured I should start writing one myself.  
