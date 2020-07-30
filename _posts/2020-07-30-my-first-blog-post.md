@@ -1,9 +1,7 @@
 ---
-title: "My-First-Blog-Post"
+title: "My First Blog Post"
 date: 2020-07-30
 ---
-
-## My first blog post
 
 I realised that a developer in today's world is practically invisible if he/she/they does not write a blog. So I figured I should start writing one myself.  
 But I faced 2 problems- 
