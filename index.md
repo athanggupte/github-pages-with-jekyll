@@ -1,3 +1,3 @@
 # Welcome to my blog
 
-I'm glad you are here. I plan to talk about ...
+I just began learning how to make a static website for myself using Github Pages and Jekyll. The easiest and most helpful course I found for this was on Github Learning Lab. This page is a part of that course.
