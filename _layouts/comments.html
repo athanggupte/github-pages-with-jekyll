@@ -5,7 +5,8 @@ layout: default
 <script>
 function execute() {
   var data = { Name : document.getElementById("cmt-name").value, Email : document.getElementById("cmt-email").value, Comment : document.getElementById("cmt-cmt").value }
-  console.log(data)
+  document.getElementByClass("comments").innerHTML += JSON.Stringify(data)
+  //console.log(data)
 }
 </script>
 
