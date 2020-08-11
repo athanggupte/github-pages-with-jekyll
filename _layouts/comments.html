@@ -2,19 +2,29 @@
 layout: default
 ---
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
-function execute() {
-  var data = { Name : document.getElementById("cmt-name").value, Email : document.getElementById("cmt-email").value, Comment : document.getElementById("cmt-cmt").value }
-  document.getElementByClass("comments").innerHTML += JSON.Stringify(data)
-  //console.log(data)
-}
+var $form = $('form#new-comment'),
+    url = 'https://script.google.com/macros/s/AKfycbwSPKLVaapllcGck2ALbxsCeZLTf0fDLUWXGqK2fkj7zC_jrcI/exec'
+
+$('#cmt-submit').on('click', function(e) {
+  e.preventDefault();
+  var jqxhr = $.ajax({
+    url: url,
+    method: "GET",
+    dataType: "json",
+    data: $form.serializeObject()
+  }).success(
+    alert("Posted successfully!")
+  );
+})
 </script>
 
 <div class="comments">
-  <form name="new-comment">
+  <form id="new-comment">
     <input type="text" id="cmt-name" placeholder="Name"/>
     <input type="text" id="cmt-email" placeholder="Email"/>
     <input type="textarea" id="cmt-cmt" placeholder="Your comment here..."/>
-    <button onclick="execute()">Submit</button>
+    <input type="submit" id="cmt-submit"></button>
   </form>
 </div>
